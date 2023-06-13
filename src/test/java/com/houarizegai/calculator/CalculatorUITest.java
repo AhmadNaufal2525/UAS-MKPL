@@ -21,4 +21,6 @@ class CalculatorUITest {
     void testCalculation(double firstNumber, double secondNumber, char operator, double expectedResult) {
         assertEquals(expectedResult, calculatorUI.calculate(firstNumber, secondNumber, operator));
     }
+    
+    
 }
