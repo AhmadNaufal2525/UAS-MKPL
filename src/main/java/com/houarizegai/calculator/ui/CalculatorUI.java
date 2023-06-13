@@ -99,6 +99,24 @@ public class CalculatorUI {
                 return secondNumber;
         }
     }
+    public double calculate(double firstNumber, double secondNumber, char operator) {
+        switch (operator) {
+            case '+':
+                return firstNumber + secondNumber;
+            case '-':
+                return firstNumber - secondNumber;
+            case '*':
+                return firstNumber * secondNumber;
+            case '/':
+                return firstNumber / secondNumber;
+            case '%':
+                return firstNumber % secondNumber;
+            case '^':
+                return Math.pow(firstNumber, secondNumber);
+            default:
+                return secondNumber;
+        }
+    }
 
     private void initThemeSelector() {
         comboTheme = createComboBox(themesMap.keySet().toArray(new String[0]), 230, 30, "Theme");
